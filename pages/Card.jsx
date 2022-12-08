@@ -1,6 +1,7 @@
 const Card = () => {
     return (
-<div classname="card">
+<div className="card">
+    
 <h3>card</h3>
 </div>
     )

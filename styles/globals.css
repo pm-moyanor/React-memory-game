@@ -23,4 +23,18 @@ a {
     color: white;
     background: black;
   }
+
+  .board{
+    border: 1px white solid;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 100px;
+    margin: 10px;
+    height: 100px;
+    background-color: aliceblue;
+  }
 }
