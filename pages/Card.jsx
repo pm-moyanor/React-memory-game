@@ -1,19 +1,19 @@
 import { useState } from "react";
 
-const Card = ({ color, id }) => {
-  const [isOn, setIsOn] = useState(false);
+const Card = ({ color, id ,flipCard, isOn}) => {
+  
 
-
-  const toggle = () => setIsOn(!isOn)
+  
   
   return (
     <div
       className="card"
       id={id}
-      style={{ backgroundColor: isOn ? color : "grey"}  }
-      onClick={toggle}
+      color={color}
+      style={{backgroundColor : "grey"}}
+      onClick={(e)=> flipCard(e,color)}
     >
-      <h3>CARD</h3>
+      
     </div>
   );
 };
